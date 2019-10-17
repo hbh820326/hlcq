@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="textandiconmargin">10dp</dimen>
+    <dimen name="dp200">200dp</dimen>
+    <dimen name="dp60">60dp</dimen>
+    <dimen name="sp14">14sp</dimen>
+</resources>

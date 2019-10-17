@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <Button
+        android:id="@+id/list_data_control"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_red"
+        android:text="单击进入狗带TV\n中国银行(长按切换数据源)"
+        android:textColor="@color/whitte" />
+    <TextView
+        android:id="@+id/hint1"
+        android:layout_below="@id/list_data_control"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="请选择卖出货币"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_below="@id/hint1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/ff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+         />
+    <TextView
+        android:id="@+id/hint2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择买入货币"/>
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_below="@id/hint2"
+        android:spinnerMode="dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ff"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+       />
+    <TextView
+        android:id="@+id/content"
+       android:padding="10dp"
+        android:lineSpacingExtra="5dp"
+        android:layout_below="@id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+       />
+</RelativeLayout>

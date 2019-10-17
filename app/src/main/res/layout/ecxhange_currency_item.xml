@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="英镑"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bankConversionPri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="银行折算中间价:1014.870"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <LinearLayout
+        android:id="@+id/fBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fBuyPri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="现汇买入价:1001.430" />
+
+        <TextView
+            android:id="@+id/fSellPri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="现汇卖出价:1001.430" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fBuy"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mBuyPri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="现钞买入价:970.510"
+
+            />
+
+        <TextView
+            android:id="@+id/mSellPri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="现钞卖出价:1009.480" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/mBuy"
+        android:layout_marginRight="10dp"
+        android:text="2012-12-13 16:25:49"
+        android:textColor="@android:color/holo_purple" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/time"
+        android:layout_marginTop="5dp"
+        android:background="@color/grey" />
+</RelativeLayout>
